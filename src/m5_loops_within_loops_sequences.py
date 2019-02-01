@@ -72,6 +72,20 @@ def run_test_integers():
     print('Expected is:', expected)
     print('Actual is:  ', answer)
 
+    # Test 2:
+    expected =
+    answer = integers([(3, 1, 4),
+                       (10, 'hi', 10),
+                       [1, 2.5, 3, 4],
+                       'hello',
+                       [],
+                       ['oops'],
+                       [[55], [44]],
+                       [30, -4]
+                       ])
+    print('Expected is:', expected)
+    print('Actual is:', answer)
+
 
 def integers(sequence_of_sequences):
     """
@@ -119,6 +133,10 @@ def integers(sequence_of_sequences):
     #    DIFFICULTY:      6
     #    TIME ESTIMATE:  10 minutes.
     # -------------------------------------------------------------------------
+    los = len(sequence_of_sequences)
+    for k in range(los):
+        for j in range(k):
+            if type([k]) == int:
 
 
 def run_test_big_letters():

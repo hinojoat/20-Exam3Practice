@@ -88,7 +88,10 @@ def shape(r):
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:  15 minutes.
     # -------------------------------------------------------------------------
-
+    for j in range(r):
+        for k in range(j - 1, 0, -1):
+            print(k, end='')
+        print(r)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
